@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Buy Baker - $50
+  m_Text: Buy AutoAttack - $50
 --- !u!222 &1095689
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -278,8 +278,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -310, y: 57}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -331, y: 25.209103}
+  m_SizeDelta: {x: 116.0358, y: 25.2091}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &117912950
 GameObject:
@@ -399,7 +399,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SellCookie
+  m_Text: Sell Item
 --- !u!222 &141414031
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -442,8 +442,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.5427, y: -13.232}
-  m_SizeDelta: {x: 278.8389, y: 26.463}
+  m_AnchoredPosition: {x: -0.000005722, y: -13.231}
+  m_SizeDelta: {x: 202.7353, y: 26.462}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &336251695
 MonoBehaviour:
@@ -581,6 +581,7 @@ GameObject:
   - component: {fileID: 478031471}
   - component: {fileID: 478031470}
   - component: {fileID: 478031472}
+  - component: {fileID: 478031473}
   m_Layer: 0
   m_Name: MechanicsObject
   m_TagString: Untagged
@@ -694,6 +695,23 @@ MonoBehaviour:
   saveGameCash: 0
   saveButton: {fileID: 2134077589}
   saveText: {fileID: 1392970029}
+--- !u!114 &478031473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478031465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cabdb0e67c699be4cb91f1c6c31c04ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  savedCookies: 0
+  savedCash: 0
+  savedBakers: 0
+  savedShops: 0
+  savedValue: 0
 --- !u!1 &514318886
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,7 +741,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9ec83dc54c55ebe4080164d0f093700a, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -953,7 +971,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 01311be63b3cd5744bad83beb433aedd, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1073,8 +1091,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -308, y: -18}
-  m_SizeDelta: {x: 222.412, y: 41.7023}
+  m_AnchoredPosition: {x: 0.000015259, y: -79.079}
+  m_SizeDelta: {x: 176.2886, y: 36.1147}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &832251939
 MonoBehaviour:
@@ -1265,7 +1283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1285,7 +1303,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Buy Shop - $50
+  m_Text: Buy AutoSell - $50
 --- !u!222 &937489635
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1337,7 +1355,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6c16b96c17d339d43a466ac9ed824821, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.253
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1647,8 +1665,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -310, y: 27}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -331, y: -0}
+  m_SizeDelta: {x: 116.0358, y: 25.2091}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1043241818
 MonoBehaviour:
@@ -1804,8 +1822,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 283.8546, y: -49.3215}
-  m_SizeDelta: {x: -588.0757, y: -283.2407}
+  m_AnchoredPosition: {x: 309.799, y: -60.248}
+  m_SizeDelta: {x: -639.9645, y: -305.09}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1131543994
 MonoBehaviour:
@@ -1881,8 +1899,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -90, y: -64}
-  m_SizeDelta: {x: 145.2678, y: 38.4184}
+  m_AnchoredPosition: {x: -307, y: -73}
+  m_SizeDelta: {x: 202.5279, y: 40.3859}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1211965290
 MonoBehaviour:
@@ -1953,15 +1971,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.9433962, b: 0.07156606, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.07468891, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 2be7b70e984b51444aca9c12ae4723a7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2014,8 +2032,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -91, y: -16}
-  m_SizeDelta: {x: 145.2678, y: 38.4184}
+  m_AnchoredPosition: {x: -309, y: -31}
+  m_SizeDelta: {x: 202.5279, y: 40.3859}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1244816106
 MonoBehaviour:
@@ -2086,15 +2104,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.9433962, b: 0.07156606, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.07468891, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 2be7b70e984b51444aca9c12ae4723a7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2335,7 +2353,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c8e9c54d9cecf5b44a150a580d4adbe5, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2535,8 +2553,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -308, y: -66}
-  m_SizeDelta: {x: 222.412, y: 41.7023}
+  m_AnchoredPosition: {x: -317, y: 155.94}
+  m_SizeDelta: {x: 176.2886, y: 36.1147}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1575917522
 MonoBehaviour:
@@ -2711,8 +2729,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.345398, y: 22.981918}
-  m_SizeDelta: {x: 278.8389, y: 26.463}
+  m_AnchoredPosition: {x: -2.3062, y: 19}
+  m_SizeDelta: {x: 198.1229, y: 21.8507}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1768212050
 MonoBehaviour:
@@ -2790,7 +2808,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 159}
+  m_AnchoredPosition: {x: 0, y: 177.5}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1834612336
@@ -2905,7 +2923,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Buy Shop - $50
+  m_Text: Buy AutoSell - $50
 --- !u!222 &1862938912
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2950,8 +2968,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -90, y: -64}
-  m_SizeDelta: {x: 145.2678, y: 38.4184}
+  m_AnchoredPosition: {x: -308.3941, y: -76.828476}
+  m_SizeDelta: {x: 202.5279, y: 40.3859}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1915078956
 MonoBehaviour:
@@ -2992,7 +3010,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1915078957}
   m_OnClick:
     m_PersistentCalls:
@@ -3029,8 +3047,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 2be7b70e984b51444aca9c12ae4723a7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3097,7 +3115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3117,7 +3135,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Buy Baker - $50
+  m_Text: Buy AutoAttack - $50
 --- !u!222 &1928210204
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3169,7 +3187,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a2c2430fba4c6cd499408b2930c4a736, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.207
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3323,7 +3341,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MakeCookie
+  m_Text: Attack
 --- !u!222 &1993405699
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3368,8 +3386,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -91, y: -16}
-  m_SizeDelta: {x: 145.2678, y: 38.4184}
+  m_AnchoredPosition: {x: -309, y: -31}
+  m_SizeDelta: {x: 202.5279, y: 40.3859}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2079625416
 MonoBehaviour:
@@ -3410,7 +3428,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 2079625417}
   m_OnClick:
     m_PersistentCalls:
@@ -3447,8 +3465,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 2be7b70e984b51444aca9c12ae4723a7, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

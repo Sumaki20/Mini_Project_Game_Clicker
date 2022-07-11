@@ -10,7 +10,7 @@ public class MainButtonClick : MonoBehaviour
     public void ClickTheButton ()
     {
         cookiesSound.Play();
-        GlobalCookies.CookieCount += 1;
+        GlobalCookies.CookieCount += 10;
     }
 
 }
